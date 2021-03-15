@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index Page</title>
+</head>
+<style>
+
+    .loginPage {
+        width: 600px;
+        border: gray solid 0.001px;
+        margin:0 auto;
+    }
+
+    .title {
+        width: 602px;
+        background-color: #3F63A8;
+        height: 70px;
+        margin:0 auto;
+    }
+
+    h2 {
+        color: aliceblue;
+        text-align: center;
+        line-height: 70px;
+    }
+
+    h3,
+    form {
+        text-align: center;
+    }
+
+    h3 {
+        margin-top: 30px;
+        margin-bottom: 5px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    input {
+        margin-bottom: 10px;
+    }
+
+    button {
+        margin-bottom: 60px;
+    }
+</style>
+
+<body>
+
+    <div class="title">
+        <h2>歡迎光臨，請輸入帳號密碼</h2>
+    </div>
+    <div class="loginPage">
+        <form class="form" action="/signin" method="POST">
+            <h3>登入系統</h3>
+            <table>
+                <tr>
+                    <td>帳號 <input type="text" name="ID" /></td>
+                </tr>
+                <tr>
+                    <td>密碼 <input type="text" name="password" /></td>
+                </tr>
+                <tr>
+                    <td><button>登入</button></td>
+                </tr>
+            </table>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>

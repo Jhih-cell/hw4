@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success Page</title>
+</head>
+<style>
+    .successPage {
+        width: 600px;
+        border: gray solid 0.001px;
+        margin:0 auto;
+    }
+
+    .title {
+        width: 602px;
+        background-color: #3F63A8;
+        height: 70px;
+        margin:0 auto;
+    }
+
+    h2 {
+        color: aliceblue;
+        text-align: center;
+        line-height: 70px;
+    }
+
+    table,
+    h3,
+    tr,
+    td,
+    form {
+        text-align: center;
+    }
+
+    .logout {
+        margin-bottom: 10px;
+    }
+</style>
+
+<body>
+
+    <div class="title">
+        <h2>歡迎光臨，這是會員頁</h2>
+    </div>
+    <div class="successPage">
+        <form class="form">
+            <h3>恭喜您，成功登入系統</h3>
+
+        </form>
+<!-- 在成功頁面網址中加入登出連結，使用者點擊，連線到【登出功能路由】 -->
+        <form action="/signout" class="logout">
+            <button>登出系統</button>
+        </form>
+
+
+
+
+
+    </div>
+
+</body>
+
+</html>
